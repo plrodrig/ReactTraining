@@ -3,10 +3,13 @@ import styles from './Product.css';
 
 class Product extends React.Component {
     render = () => {
+        console.log("Product.render(): this.props = %O",this.props)
+        if (this.props === undefined)
+            return null;
         const { title, author, published, country, lang, pages,
             //image, 
-            url, price } = this.props.product;
-
+            url, price } = this.props;
+console.log(`Product.render(): rendering ${title}`)
         return (<div style={styles.product}>
 
             {/* <img style={styles.thumbnail}
@@ -36,11 +39,8 @@ class Product extends React.Component {
     handleClick = (e) => {
         const handler = this.props[e.target.name];
         console.log("handleClick(e = %O); handler = %O; this.props = %O; id = %s", e, handler, this.props, this.props.id);
-        handler(this.props.product.id);
+        handler(this.props.id);
     };
-
 }
-
-
 
 export default Product;
