@@ -30,7 +30,7 @@ class ProductList extends React.Component {
                 {products.map(product => (
                         <li key={product.id} style={styles.productListItem}>
                             <Product {...product}
-                                inCart={inCart.includes(product.id) ? '1' : ''}
+                                inCart={inCart.includes(product.id)}
                                 addToCart={this.props.addToCart}
                                 removeFromCart={this.props.removeFromCart}
                             />
