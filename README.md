@@ -1,7 +1,7 @@
 # ReactTraining
 Repo of materials from React training (JPM onsite 8/6/2018 - 8/8/2018).
 
-Trainer: **Rap Payne** - [rappayne@triveratech.com](mailto:rappayne@triveratech.com)
+Trainer: **Rap Payne** - [rap.payne@triveritech.com](mailto:rappayne@triveratech.com)
 
 ### /Courseware
 PDF files of training slides and lab materials.
