@@ -21,8 +21,6 @@ const rootReducer = (oldState, action) => {
   } else if (action.type === "SET_PEOPLE") {
     return {...oldState, people: action.newPeople};
   }
-  else
-    return oldState;
   return oldState;
 };
 
